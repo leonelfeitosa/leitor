@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeitorFragment">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:text="No Text"
+        android:layout_below="@id/surface_view"
+        android:textAlignment="center"
+        android:textColor="#3C8DBC"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_layout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="450dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/confirmar"
+            android:layout_width="172dp"
+            android:layout_height="39dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Confirmar"
+            android:textColor="@color/colorPrimary"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="409dp" />
+
+
+        <Button
+            android:id="@+id/repetir"
+            android:layout_width="164dp"
+            android:layout_height="39dp"
+            android:background="@color/colorAccent"
+            android:text="Repetir"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="0dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
